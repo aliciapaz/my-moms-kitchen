@@ -7,6 +7,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
   entry: {
     index: './src/index.js',
   },
+    plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Output Management',
+    }),
+  ],
    output: {
      filename: '[name].main.js',
      path: path.resolve(__dirname, 'dist'),
