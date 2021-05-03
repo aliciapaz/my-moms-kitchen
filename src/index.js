@@ -1,1 +1,3 @@
-console.log("my mom is the best")
+import {component} from './home.js';
+
+document.body.appendChild(component());
