@@ -26,7 +26,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "output management",
+      title: "My Mom's Kitchen",
     }),
   ],
 };
