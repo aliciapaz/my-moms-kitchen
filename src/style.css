@@ -5,7 +5,7 @@
   font-style: normal;
 }
 
-/* navigation */
+/* navigation bar */
 nav {
   overflow-x: hidden;
   width: 100vw;
@@ -17,10 +17,25 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font: 600 2rem 'Cookie-Regular';
+  color: #eee;
 }
 
 .nav-links li {
   padding: 0.5rem;
+}
+
+.nav-links .burger-btn {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links { justify-content: flex-start;}
+  .nav-links li {display: none;}
+  .nav-links .burger-btn {
+    display: block;
+    margin-top: 0.5rem;
+  }
 }
 
 /* home page */
@@ -50,8 +65,9 @@ nav {
 
 .home-image h1 {
   font-family: 'Cookie-Regular';
+  color: #eee;
   position: absolute;
-  bottom: 12rem;
+  top: 5rem;
   z-index: 1;
   font-size: 5rem;
   text-align: center;

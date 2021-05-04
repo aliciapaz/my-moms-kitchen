@@ -2,7 +2,8 @@ export function navTab() {
   const element = document.createElement("nav");
   const tabs = document.createElement("ul");
   const burgerBtn = document.createElement('i');
-  burgerBtn.className = 'fas fa-bars';
+  burgerBtn.className = 'fas fa-bars burger-btn';
+  burgerBtn.onclick = displayLinks();
   tabs.className = 'nav-links'
 
   const menuTab = document.createElement("li");
@@ -22,5 +23,10 @@ export function navTab() {
   tabs.appendChild(burgerBtn);
   
   element.appendChild(tabs);
+
+  function displayLinks() {
+
+  }
+
   return element;
 }
