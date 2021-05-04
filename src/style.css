@@ -5,6 +5,26 @@
   font-style: normal;
 }
 
+/* navigation */
+nav {
+  overflow-x: hidden;
+  width: 100vw;
+  position: absolute;
+  z-index: 2;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  padding: 0.5rem;
+}
+
+/* home page */
+
 .home-image {
   display: flex;
   justify-content: center;
@@ -31,7 +51,8 @@
 .home-image h1 {
   font-family: 'Cookie-Regular';
   position: absolute;
-  top: 40vh;
-  z-index: 2;
-  
+  bottom: 12rem;
+  z-index: 1;
+  font-size: 5rem;
+  text-align: center;
 }
