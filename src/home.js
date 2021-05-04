@@ -6,7 +6,7 @@ export function component() {
   const header = document.createElement('h1');
   element.className = 'home-image';
   cover.className = 'cover';
-  header.innerHTML = "My Mom's Kitchen";
+  header.innerHTML = "La cocina de Fabiola";
   
   const myKitchen = new Image();
   myKitchen.src= Kitchen;
@@ -14,6 +14,6 @@ export function component() {
   element.appendChild(myKitchen);
   element.appendChild(cover);
   element.appendChild(header);
-  
+
   return element;
 }

@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Cookie-Regular';
+  src: url('./fonts/Cookie-Regular.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .home-image {
   display: flex;
   justify-content: center;
@@ -22,7 +29,9 @@
 }
 
 .home-image h1 {
+  font-family: 'Cookie-Regular';
   position: absolute;
   top: 40vh;
   z-index: 2;
+  
 }

@@ -22,8 +22,12 @@ module.exports = {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
       },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: 'asset/resource',
+      },  
     ],
-  },
+  },  
   plugins: [
     new HtmlWebpackPlugin({
       title: "My Mom's Kitchen",
