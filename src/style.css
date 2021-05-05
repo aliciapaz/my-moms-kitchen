@@ -68,29 +68,29 @@ nav {
 .ribbon {
   font: 2rem 'Cookie-Regular';
   width: 66%;
-     
   position: relative;
   background: #eeb76b;
   color: #fff;
   text-align: center;
-  padding: .6em 2em; /* Adjust to suit */
-  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  padding: .2em 2em;
+  margin: 1em auto 3em;
  }
+ 
  .ribbon:before, .ribbon:after {
   content: "";
   position: absolute;
   display: block;
   bottom: -1em;
-  border: 1.5em solid #f1a131;
+  border: .8em solid #f1a131;
   z-index: -1;
  }
  .ribbon:before {
-  left: -2em;
+  left: -1.3em;
   border-right-width: 1.5em;
   border-left-color: transparent;
  }
  .ribbon:after {
-  right: -2em;
+  right: -1.3em;
   border-left-width: 1.5em;
   border-right-color: transparent;
  }
