@@ -26,21 +26,27 @@ export function background() {
   return element;
 }
 
-export function home() {
+export function board() {
+  const container = document.createElement("div");
   const myBoard = new Image();
   myBoard.src = Board;
-  const element = document.createElement("div");
-  const container = document.createElement("div");
-  element.className = "home-content";
   container.className = "board-container";
+  container.appendChild(myBoard);
   
+  return container;
+}
+
+export function home() {
+  const element = document.createElement("div");
+  const content = document.createElement("div");
+  content.className = "content"
+  element.className = "flex-container";
+
   const text = document.createElement("h2");
-  
   text.innerHTML = "Mis platos favoritos hechos por mi mamá";
   
-  container.appendChild(text);
-  container.appendChild(myBoard);
-  element.appendChild(container);
+  content.appendChild(text);
+  element.appendChild(content);
 
   return element;
 }
