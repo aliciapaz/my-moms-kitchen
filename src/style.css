@@ -44,7 +44,7 @@ nav {
   background:#9c3d54;
   font-size: 3rem;
   text-align: center;
-  animation: growDown 300ms ease-in-out forwards;
+  animation: growDown 35ms ease-in-out forwards;
 }
 
 .responsive li {
