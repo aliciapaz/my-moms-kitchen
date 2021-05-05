@@ -12,6 +12,12 @@
   font-style: normal;
 }
 
+@media screen and (max-width: 324px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 /* navigation bar */
 nav {
   overflow-x: hidden;
@@ -207,16 +213,24 @@ nav {
   width: 50%;
 }
 
-.content h2 {
-  padding: 0 0.5rem;
-  font-size: 2rem;
+.content h1 {
+  font-size: 2.5rem;
 }
 
-@media screen and (min-width: 600px) {
-  .home-content h1 {
-    font-size: 5.5rem;
+.content h2 {
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    padding: 1rem;
   }
-  .home-content img {width: 40%;}
+  .content h2 {
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
 }
 
 /* menu */
