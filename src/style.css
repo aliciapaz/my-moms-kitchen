@@ -10,7 +10,7 @@ nav {
   overflow-x: hidden;
   width: 100vw;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   color: #eee;
   font: 600 2rem 'Cookie-Regular';
 }
@@ -33,7 +33,7 @@ nav {
   padding: 0.1rem;
   max-height: 100%;
   flex-direction: column;
-  background:rgb(255, 166, 50);
+  background:#9c3d54;
   font-size: 3rem;
   text-align: center;
   animation: growDown 300ms ease-in-out forwards;
@@ -63,12 +63,70 @@ nav {
   }
 }
 
-/* home page */
+/* ribbon heading */ 
 
+.ribbon {
+  font: 2rem 'Cookie-Regular';
+  width: 66%;
+     
+  position: relative;
+  background: #eeb76b;
+  color: #fff;
+  text-align: center;
+  padding: .6em 2em; /* Adjust to suit */
+  margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+ }
+ .ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 1.5em solid #f1a131;
+  z-index: -1;
+ }
+ .ribbon:before {
+  left: -2em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+ }
+ .ribbon:after {
+  right: -2em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+ }
+ .ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #e2703a transparent transparent transparent;
+  bottom: -1em;
+ }
+ .ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+ }
+ .ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+ }
+
+ .ribbon-container {
+   position: absolute;
+   width: 100%;
+   top: 1rem;
+   z-index: 2;
+ }
+
+ @media screen and (min-width: 600px) {
+   .ribbon {
+     font-size: 3rem;
+   }
+ }
+
+/* background with board */ 
 .home-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
 }
 
 .home-image img {
@@ -88,12 +146,42 @@ nav {
   background: rgba(228, 81, 13, 0.5);
 }
 
-.home-image h1 {
+/* home content */ 
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   font-family: 'Cookie-Regular';
-  color: #eee;
-  position: absolute;
-  top: 5rem;
-  z-index: 1;
-  font-size: 5rem;
   text-align: center;
+  color: #eee;
+  z-index: 1;
+  width: 100%;
+}
+
+/* .home-content .board-container {
+  margin: 0 auto;
+} */
+
+.home-content img {
+  width: 80%;
+  border: 0.5rem solid #4e3620;
+  border-radius: 5px;
+  z-index: 1;
+}
+/* 
+.home-content h1 {
+  font-size: 4.5rem;
+  z-index: 2
+}
+
+.home-content h2 {
+  z-index: 2
+} */
+
+@media screen and (min-width: 600px) {
+  .home-content h1 {
+    font-size: 5.5rem;
+  }
+  .home-content img {width: 40%;}
 }
