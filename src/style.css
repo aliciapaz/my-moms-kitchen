@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Sacramento';
+  src: url('./fonts/Sacramento-Regular.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* navigation bar */
 nav {
   overflow-x: hidden;
@@ -23,6 +30,7 @@ nav {
 
 .nav-links li {
   padding: 0.5rem;
+  cursor: pointer;
 }
 
 .burger-btn {
@@ -37,6 +45,10 @@ nav {
   font-size: 3rem;
   text-align: center;
   animation: growDown 300ms ease-in-out forwards;
+}
+
+.responsive li {
+  cursor: pointer;
 }
 
 @keyframes growDown {
@@ -181,7 +193,7 @@ nav {
 
 .flex-container {
   position: absolute;
-  top: 15rem;
+  top: 13rem;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -189,25 +201,16 @@ nav {
 }
 
 .content {
-  font-family: 'Cookie-Regular';
+  font-family: 'Sacramento';
   text-align: center;
   color: #eee;
   width: 50%;
 }
 
 .content h2 {
-  font-size: 2.5rem;
+  padding: 0 0.5rem;
+  font-size: 2rem;
 }
-
-/* 
-.home-content h1 {
-  font-size: 4.5rem;
-  z-index: 2
-}
-
-.home-content h2 {
-  z-index: 2
-} */
 
 @media screen and (min-width: 600px) {
   .home-content h1 {
@@ -215,3 +218,5 @@ nav {
   }
   .home-content img {width: 40%;}
 }
+
+/* menu */
