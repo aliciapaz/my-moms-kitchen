@@ -42,7 +42,7 @@ export function home() {
   content.className = "content"
   element.className = "flex-container";
 
-  const text = document.createElement("h2");
+  const text = document.createElement("h1");
   text.innerHTML = "Mis platos favoritos hechos por mi mamá";
   
   content.appendChild(text);
