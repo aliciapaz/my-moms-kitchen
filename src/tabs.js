@@ -33,5 +33,6 @@ export function navTab() {
 
   element.appendChild(toggleBtn);
   element.appendChild(tabs);
+
   return element;
 }

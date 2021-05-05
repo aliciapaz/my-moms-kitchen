@@ -11,3 +11,18 @@ document.body.appendChild(background());
 document.body.appendChild(board());
 
 document.body.appendChild(home());
+
+(() => {
+  let tabs = document.getElementsByTagName('li');
+  
+  for (let i = tabs.length; i--;) {
+    tabs[i].onclick = () => {
+      clearBoard();
+    }
+  }
+
+  const clearBoard = () => {
+    let content = document.querySelector('.content');
+    content.remove();
+  }
+})()
