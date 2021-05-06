@@ -16,26 +16,38 @@ document.body.appendChild(home());
 (() => {
   const tabs = document.getElementsByTagName('li');
 
-  function clearMenu(menu) {
+  const clearMenu = (menu) => {
     menu.className = 'nav-links';
-  }
+  };
 
-  function clearBoard() {
+  const clearBoard = () => {
     const content = document.querySelector('.flex-container');
-    if (content !== undefined) { content.remove(); }
-  }
+    if (content !== undefined) {
+      content.remove();
+    }
+  };
 
   function displayContent(tab) {
-    if (tab.innerHTML === 'Home') { document.body.appendChild(home()); }
-    if (tab.innerHTML === 'About') { document.body.appendChild(about()); }
-    if (tab.innerHTML === 'Contact') { document.body.appendChild(contact()); }
-    if (tab.innerHTML === 'Menu') { document.body.appendChild(menu()); }
+    if (tab.innerHTML === 'Home') {
+      document.body.appendChild(home());
+    }
+    if (tab.innerHTML === 'About') {
+      document.body.appendChild(about());
+    }
+    if (tab.innerHTML === 'Contact') {
+      document.body.appendChild(contact());
+    }
+    if (tab.innerHTML === 'Menu') {
+      document.body.appendChild(menu());
+    }
   }
 
   for (let i = 0; i < tabs.length; i += 1) {
     const tab = tabs[i];
     tabs[i].onclick = () => {
-      if (tab.parentNode.className === 'responsive') { clearMenu(tab.parentElement); }
+      if (tab.parentNode.className === 'responsive') {
+        clearMenu(tab.parentElement);
+      }
       clearBoard();
       displayContent(tab);
     };
