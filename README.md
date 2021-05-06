@@ -24,11 +24,12 @@ To get a local copy up and running follow these simple example steps.
 - Clone this repository using the link above (click on the 'code' button)
 - Open a terminal and `cd` to the cloned repository
 - Run `npm install`
+- Run `npm run build`
 - Open a live server in your preferred browser to explore `dist/index.html`
 
 ### Usage
 
-- Click on the tabs on the menu to check out the content in each section
+- Click on the tabs on the menu to check out the content in each section!
 
 ### Deployment
 
