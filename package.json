@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/aliciapaz/my-moms-kitchen#readme",
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.3",
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.2.4",
     "eslint": "^6.8.0",
@@ -39,6 +38,7 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "html-webpack-plugin": "^5.3.1",
     "reseter.css": "^1.1.3"
   }

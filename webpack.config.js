@@ -1,15 +1,15 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: "development",
+  mode: 'development',
   entry: {
-    index: "./src/index.js",
+    index: './src/index.js',
     home: './src/home.js',
   },
   output: {
-    filename: "[name].main.js",
-    path: path.resolve(__dirname, "dist"),
+    filename: '[name].main.js',
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
@@ -25,9 +25,9 @@ module.exports = {
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
-      },  
+      },
     ],
-  },  
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "My Mom's Kitchen",
