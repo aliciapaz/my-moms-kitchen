@@ -1,0 +1,287 @@
+@font-face {
+  font-family: 'Cookie-Regular';
+  src: url('./fonts/Cookie-Regular.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sacramento';
+  src: url('./fonts/Sacramento-Regular.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media screen and (max-width: 324px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* navigation bar */
+nav {
+  overflow-x: hidden;
+  width: 100vw;
+  position: absolute;
+  z-index: 4;
+  color: #eee;
+  font: 600 2rem 'Cookie-Regular', sans-serif;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-links li {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition-delay: 50ms;
+  transition-duration: 400ms;
+}
+
+.responsive li {
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.nav-links li:hover {
+  color: #ffe02d;
+}
+
+.burger-btn {
+  display: none;
+}
+
+.responsive {
+  padding: 0.1rem;
+  max-height: 100%;
+  flex-direction: column;
+  background: #9c3d54;
+  font-size: 3rem;
+  text-align: center;
+  animation: growDown 35ms ease-in-out forwards;
+}
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+
+  80% {
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-links { display: none; }
+
+  .burger-btn {
+    display: block;
+    margin: 0.5rem;
+  }
+}
+
+/* background */
+
+.home-image {
+  width: 100vw;
+}
+
+.home-image img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.home-image .cover {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(228, 81, 13, 0.5);
+}
+
+/* ribbon heading */
+
+.ribbon {
+  font: 2.5rem 'Cookie-Regular', sans-serif;
+  width: 66%;
+  position: relative;
+  background: #eeb76b;
+  color: #fff;
+  text-align: center;
+  padding: 0.2em 1em;
+  margin: 1em auto 3em;
+}
+
+.ribbon::before,
+.ribbon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -1em;
+  border: 0.8em solid #f1a131;
+  z-index: -1;
+}
+
+.ribbon::before {
+  left: -1.3em;
+  border-right-width: 1.5em;
+  border-left-color: transparent;
+}
+
+.ribbon::after {
+  right: -1.3em;
+  border-left-width: 1.5em;
+  border-right-color: transparent;
+}
+
+.ribbon .ribbon-content::before,
+.ribbon .ribbon-content::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #e2703a transparent transparent transparent;
+  bottom: -1em;
+}
+
+.ribbon .ribbon-content::before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content::after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+.ribbon-container {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  z-index: 2;
+}
+
+@media screen and (min-width: 600px) {
+  .ribbon {
+    font-size: 3rem;
+  }
+}
+
+/* board */
+
+.board-container {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  top: 12rem;
+  z-index: 1;
+}
+
+.board-container img {
+  width: 50%;
+  margin: 0 auto;
+  border: 0.5rem solid #4e3620;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .board-container {
+    top: 18rem;
+  }
+
+  .board-container img {
+    width: 100%;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+
+/* content */
+
+.flex-container {
+  position: absolute;
+  top: 15rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.content {
+  font-family: 'Sacramento', sans-serif;
+  text-align: center;
+  color: #eee;
+  width: 50%;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+}
+
+.content h2 {
+  padding: 1rem 1rem;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .content h1 {
+    padding: 1rem;
+  }
+
+  .content h2 {
+    padding: 1rem 0.5rem;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+}
+
+/* menu */
+
+.menuList {
+  font-size: 2rem;
+  list-style: none;
+  text-align: left;
+}
+
+.menuList img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menuList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 14rem 14rem;
+    padding: 0 1rem;
+  }
+
+  .menuList li {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .menuList img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .flex-container {
+    top: 13rem;
+  }
+}
