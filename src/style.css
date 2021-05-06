@@ -25,7 +25,7 @@ nav {
   position: absolute;
   z-index: 4;
   color: #eee;
-  font: 600 2rem 'Cookie-Regular';
+  font: 600 2rem 'Cookie-Regular', sans-serif;
 }
 
 .nav-links {
@@ -39,6 +39,11 @@ nav {
   cursor: pointer;
   transition-delay: 50ms;
   transition-duration: 400ms;
+}
+
+.responsive li {
+  cursor: pointer;
+  padding: 1rem;
 }
 
 .nav-links li:hover {
@@ -59,10 +64,6 @@ nav {
   animation: growDown 35ms ease-in-out forwards;
 }
 
-.responsive li {
-  cursor: pointer;
-}
-
 @keyframes growDown {
   0% {
     transform: scaleY(0);
@@ -75,10 +76,6 @@ nav {
   100% {
     transform: scaleY(1);
   }
-}
-
-.responsive li {
-  padding: 1rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -116,7 +113,7 @@ nav {
 /* ribbon heading */
 
 .ribbon {
-  font: 2.5rem 'Cookie-Regular';
+  font: 2.5rem 'Cookie-Regular', sans-serif;
   width: 66%;
   position: relative;
   background: #eeb76b;
@@ -225,7 +222,7 @@ nav {
 }
 
 .content {
-  font-family: 'Sacramento';
+  font-family: 'Sacramento', sans-serif;
   text-align: center;
   color: #eee;
   width: 50%;
