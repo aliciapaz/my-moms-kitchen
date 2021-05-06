@@ -1,7 +1,7 @@
 import Kitchen from './images/cocina.jpg';
 import Board from './images/chalkboard.jpg';
 
-export function background() {
+const background = () => {
   const element = document.createElement('div');
   const cover = document.createElement('div');
 
@@ -26,7 +26,7 @@ export function background() {
   return element;
 }
 
-export function board() {
+const board = () => {
   const container = document.createElement('div');
   const myBoard = new Image();
   myBoard.src = Board;
@@ -36,7 +36,7 @@ export function board() {
   return container;
 }
 
-export function home() {
+const home = () => {
   const element = document.createElement('div');
   const content = document.createElement('div');
   content.className = 'content';
@@ -50,3 +50,5 @@ export function home() {
 
   return element;
 }
+
+export { background, board, home }
