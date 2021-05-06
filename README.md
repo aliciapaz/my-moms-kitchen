@@ -26,7 +26,7 @@ To get a local copy up and running follow these simple example steps.
 - Open a terminal and `cd` to the cloned repository
 - Run `npm install`
 - Run `npm run build`
-- Open a live server in your preferred browser to explore `dist/index.html`
+- Open `dist/index.html` in a live server in your preferred browser to explore the different sections! 
 
 ### Usage
 
