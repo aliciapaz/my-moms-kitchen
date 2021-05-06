@@ -24,7 +24,7 @@ const background = () => {
   ribbonCont.appendChild(ribbon);
   element.appendChild(ribbonCont);
   return element;
-}
+};
 
 const board = () => {
   const container = document.createElement('div');
@@ -34,7 +34,7 @@ const board = () => {
   container.appendChild(myBoard);
 
   return container;
-}
+};
 
 const home = () => {
   const element = document.createElement('div');
@@ -49,6 +49,6 @@ const home = () => {
   element.appendChild(content);
 
   return element;
-}
+};
 
-export { background, board, home }
+export { background, board, home };
