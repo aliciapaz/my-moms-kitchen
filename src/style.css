@@ -37,6 +37,12 @@ nav {
 .nav-links li {
   padding: 0.5rem;
   cursor: pointer;
+  transition-delay: 50ms;
+  transition-duration: 400ms;
+}
+
+.nav-links li:hover {
+  color: #ffe02d;
 }
 
 .burger-btn {
@@ -204,6 +210,7 @@ nav {
   justify-content: center;
   width: 100%;
   z-index: 1;
+  padding: 1rem;
 }
 
 .content {
@@ -234,3 +241,37 @@ nav {
 }
 
 /* menu */
+
+.menuList {
+  font-size: 2rem;
+  list-style: none;
+  text-align: left;
+}
+
+.menuList img {
+  display: none
+}
+
+@media screen and (min-width: 768px) {
+  .menuList {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 14rem 14rem;;
+    padding: 0 1rem;
+  }
+  .menuList li {
+    border: 1px solid #eee;
+    padding: 0.5rem;
+    text-align: center;
+  }
+  
+  .menuList img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .flex-container {
+    top: 13rem;
+  }
+}

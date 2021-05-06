@@ -1,14 +1,12 @@
 import 'reseter.css'
 import './style.css';
-
 import "@fortawesome/fontawesome-free/js/all.js";
 import "@fortawesome/fontawesome-free/css/all.css";
-
 import { background, board, home } from './home.js';
-import { navTab } from './tabs.js';
-import { about } from './about.js';
-import { contact } from './contact.js';
-
+import { navTab } from './tabs';
+import { about } from './about';
+import { contact } from './contact';
+import { menu } from './menu'
 
 document.body.appendChild(navTab());
 document.body.appendChild(background());
@@ -40,6 +38,6 @@ document.body.appendChild(home());
     if (tab.innerHTML === 'Home') {document.body.appendChild(home())};
     if (tab.innerHTML === 'About') {document.body.appendChild(about())};
     if (tab.innerHTML === 'Contact') {document.body.appendChild(contact())};
+    if (tab.innerHTML === 'Menu') {document.body.appendChild(menu())};
   }
-  
 })()
