@@ -16,7 +16,17 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"component\": () => (/* binding */ component)\n/* harmony export */ });\n/* harmony import */ var _images_cocina_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/cocina.jpg */ \"./src/images/cocina.jpg\");\n\n\nfunction component() {\n  const element = document.createElement('div');\n  const cover = document.createElement('div');\n  const header = document.createElement('h1');\n  element.className = 'home-image';\n  cover.className = 'cover';\n  header.innerHTML = \"La cocina de Fabiola\";\n  \n  const myKitchen = new Image();\n  myKitchen.src= _images_cocina_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n  element.appendChild(myKitchen);\n  element.appendChild(cover);\n  element.appendChild(header);\n\n  return element;\n}\n\n\n//# sourceURL=webpack://my-moms-kitchen/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"background\": () => (/* binding */ background),\n/* harmony export */   \"board\": () => (/* binding */ board),\n/* harmony export */   \"home\": () => (/* binding */ home)\n/* harmony export */ });\n/* harmony import */ var _images_cocina_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/cocina.jpg */ \"./src/images/cocina.jpg\");\n/* harmony import */ var _images_chalkboard_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/chalkboard.jpg */ \"./src/images/chalkboard.jpg\");\n\n\n\nfunction background() {\n  const element = document.createElement('div');\n  const cover = document.createElement('div');\n\n  element.className = 'home-image';\n  cover.className = 'cover';\n\n  const myKitchen = new Image();\n  myKitchen.src = _images_cocina_jpg__WEBPACK_IMPORTED_MODULE_0__;\n\n  element.appendChild(myKitchen);\n  element.appendChild(cover);\n  const ribbonCont = document.createElement('div');\n  const ribbon = document.createElement('h1');\n  const header = document.createElement('strong');\n  ribbonCont.className = 'ribbon-container';\n  ribbon.className = 'ribbon';\n  header.className = 'ribbon-content';\n  header.innerHTML = 'La cocina de Fabiola';\n  ribbon.appendChild(header);\n  ribbonCont.appendChild(ribbon);\n  element.appendChild(ribbonCont);\n  return element;\n}\n\nfunction board() {\n  const container = document.createElement('div');\n  const myBoard = new Image();\n  myBoard.src = _images_chalkboard_jpg__WEBPACK_IMPORTED_MODULE_1__;\n  container.className = 'board-container';\n  container.appendChild(myBoard);\n\n  return container;\n}\n\nfunction home() {\n  const element = document.createElement('div');\n  const content = document.createElement('div');\n  content.className = 'content';\n  element.className = 'flex-container';\n\n  const text = document.createElement('h1');\n  text.innerHTML = 'Mis platos favoritos hechos por mi mamá';\n\n  content.appendChild(text);\n  element.appendChild(content);\n\n  return element;\n}\n\n//# sourceURL=webpack://my-moms-kitchen/./src/home.js?");
+
+/***/ }),
+
+/***/ "./src/images/chalkboard.jpg":
+/*!***********************************!*\
+  !*** ./src/images/chalkboard.jpg ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"708423f31807a1e932e5.jpg\";\n\n//# sourceURL=webpack://my-moms-kitchen/./src/images/chalkboard.jpg?");
 
 /***/ }),
 
