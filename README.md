@@ -1,6 +1,6 @@
 # My mom's kitchen
 
-> A restaurant-like page to show my favorite dishes made by my mom
+> I had to build a single-page application for a hypothetical restaurant for learning purposes, and I decided to use it to showcase my favorite dishes made by my mother.
 
 ![screenshot](./screenshot.png)
 
